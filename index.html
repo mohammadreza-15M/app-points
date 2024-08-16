@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="container"> -->
+    <div class="app">
+      <nav class="tools-area">
+        <ul class="tools">
+          <li class="eraser">
+            <i class="fa-solid fa-eraser"></i><label> eraser</label>
+          </li>
+          <li class="brush active">
+            <i class="fa-solid fa-paint-brush"></i><label> brush</label>
+          </li>
+          <li class="color">
+            <i class="fa-sharp fa-solid fa-palette"></i>
+            <label for="color-picker"> choose color</label>
+            <input type="color" id="color-picker" />
+          </li>
+          <li><input type="range" min="1" max="10" id="brush-width" /></li>
+        </ul>
+        <div class="buttons">
+          <button id="save-btn">Save</button>
+          <button id="clear-btn">Clear</button>
+        </div>
+      </nav>
+      <div class="draw-area">
+        <canvas></canvas>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <script src="js/JS.js"></script>
+  </body>
+</html>
